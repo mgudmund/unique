@@ -1,5 +1,5 @@
 FROM scratch
 
-COPY  target/unique /unique
+COPY  target/unique /
 
 ENTRYPOINT ["/unique"]
