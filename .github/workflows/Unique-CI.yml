@@ -32,6 +32,12 @@ jobs:
         GOARCH: amd64
         CGO_ENABLED: 0
 
+    - name: Trim the fat with UPX
+      uses: crazy-max/ghaction-upx@v1
+      with:
+        version: latest
+        file: ./target/unique
+
     - name: Test
       run: go test -v .
 
