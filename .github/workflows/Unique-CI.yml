@@ -27,7 +27,7 @@ jobs:
 
     - name: Build
       run: go build -o target/unique -v -ldflags="-w -s".
-      with:
+      env:
         GOOS: linux
         GOARCH: amd64
 
