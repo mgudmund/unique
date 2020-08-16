@@ -34,12 +34,8 @@ jobs:
     - name: Test
       run: go test -v .
 
-
-
-
     - name: shiftleft-scan
       uses: ShiftLeftSecurity/scan-action@v1.0.0
-
 
 
     # upload artifacts
@@ -50,14 +46,14 @@ jobs:
         path: reports
 
     - name: Build and push Docker images
-    uses: docker/build-push-action@v1
-    with:
-      username: ${{ github.actor }}
-      password: ${{ secrets.GITHUB_TOKEN }}
-      registry: docker.pkg.github.com
-      repository: mgudmund/unique/unique
-      tag_with_ref: true
-      tag_with_sha: true
+      uses: docker/build-push-action@v1
+      with:
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+        registry: docker.pkg.github.com
+        repository: mgudmund/unique/unique
+        tag_with_ref: true
+        tag_with_sha: true
 
 
 
