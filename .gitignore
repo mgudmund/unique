@@ -16,3 +16,4 @@
 
 # Build module for this project
 unique
+target/*
