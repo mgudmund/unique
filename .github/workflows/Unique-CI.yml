@@ -26,7 +26,7 @@ jobs:
       uses: Jerome1337/golint-action@v1.0.2
 
     - name: Build
-      run: go build -o target/unique -v -ldflags="-w -s".
+      run: go build -o target/unique -v -ldflags="-s -w " mgudmund/unique
       env:
         GOOS: linux
         GOARCH: amd64
