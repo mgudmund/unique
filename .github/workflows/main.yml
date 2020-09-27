@@ -30,7 +30,7 @@ jobs:
           echo "${{ toJson(matrix) }}"
           pwd
           ls -la 
-          ls -la /home/runner/work/_temp
+          ls -la /home/runner/work/_temp/_github_workflow
           ls -la /
           ls -la /var
           ls -la /var/log
