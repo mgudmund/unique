@@ -32,6 +32,6 @@ jobs:
           ls -la 
           ls -la /home/runner/work
           ls -la /
-          ls -la /opt
+          ls -la /opt/runner
           
           
