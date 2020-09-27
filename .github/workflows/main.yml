@@ -33,6 +33,6 @@ jobs:
           ls -la /home/runner/work
           ls -la /
           ls -la /var
-          ls -la /var/logs
+          ls -la /var/log
           
           
