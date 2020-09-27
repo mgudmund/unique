@@ -30,6 +30,6 @@ jobs:
           echo "${{ toJson(matrix) }}"
           pwd
           ls -la 
-          ls -la /home/runner/.config/configstore
+          ls -la /home/runner/work
           
           
