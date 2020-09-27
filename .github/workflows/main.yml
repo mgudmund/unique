@@ -12,4 +12,5 @@ jobs:
           ls -la /home/runner
           ls -la /home/runner/perflog
           ls -la /home/runner/runners
+          cat /home/runner/perflog/*
       
