@@ -9,6 +9,7 @@ jobs:
     steps:
       - name: step1
         run: |
+          ls -la /home/runner/work/unique
           ls -la /home/runner
           ls -la /home/runner/perflog
           ls -la /home/runner/runners
