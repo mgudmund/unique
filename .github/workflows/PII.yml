@@ -26,3 +26,7 @@ jobs:
         # You may pin to the exact commit or the version.
         # uses: nightfallai/nightfall_dlp_action@c18db601258f06bf6b312f9d2b4fd845eaf7d430
         uses: nightfallai/nightfall_dlp_action@v1.0.0
+        env:
+          NIGHTFALL_API_KEY: ${{ secrets.NIGHTFALL_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          EVENT_BEFORE: ${{ github.event.before }}
